@@ -97,6 +97,68 @@ header{
     justify-content: center;
 }
 
+/* CATALOGO DE PRODUCTOS */
+.catalogo h2{
+    text-align: center;
+}
+
+.productos{
+    padding:2rem;
+}
+
+.productos > ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+}
+
+.productos > ul > li{
+    border: 1px solid #e2e2e2;
+    border-radius: .5rem;
+    list-style: none;
+    box-shadow: 0px 0px 5px #e2e2e2;
+}
+
+.productos > ul > li > figure{
+    max-height: 220px;
+    overflow: hidden;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    position: relative;
+    margin: 0;
+}
+
+.imagen-catalogo{
+    width: 100%;
+}
+
+.productos h2{
+    font-size: 1rem;
+    color: #666666;
+    text-align: center;
+}
+
+.botonSeguroVerMas{
+    text-align: center;
+    padding: 1rem;
+}
+
+.botonSeguroVerMas button{
+    background-color: rgb(201, 238, 255);
+    border: 1px solid #97DEFF;
+    height: 30px;
+    
+}
+
+.botonSeguroVerMas button a:link{
+    text-decoration: none;
+    color: #666666;
+}
+
+.botonSeguroVerMas button a:visited{
+    text-decoration: none;
+    color: #666666;
+}
 
 
 
