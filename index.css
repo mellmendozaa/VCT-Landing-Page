@@ -270,4 +270,15 @@ nav .titulo{
     width: 80%;
 }
 
+/* FOOTER */
+footer{
+    background-color: rgb(170, 119, 255);
+}
 
+footer p{
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+    text-align: right;
+}
