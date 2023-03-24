@@ -6,21 +6,34 @@ html, body{
 /* HEADER */
 header{
     background-color: rgb(170, 119, 255);
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: baseline; */
+}
+
+nav{
+    position: relative;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 /* Titulo */
-.titulo{
+nav .titulo{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5rem 1rem;
+    padding-right: calc(1rem - 5px);
 }
 
 /* Barra de navegacion */
 .menu{
+    display: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    align-items: center;
 }
 
 .menu ul{
@@ -45,6 +58,81 @@ header{
 .menu a:hover{
     text-decoration: 3px white underline;
 }
+
+.menuHamburguesa{
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.menuHamburguesa span{
+    color: #FFF;
+    font-size: 2rem;
+}
+
+.menuMobil{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+
+    padding-top: 6rem;
+
+    opacity: 0;
+    transform: translateY(100%);
+    background-color: rgb(170, 119, 255);
+    color: #FFF;
+    transition: 0.3s;
+}
+
+.menuMobil.is-open{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menuMobil a{
+    display: block;
+    padding: 1rem;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: 0.3s;
+}
+
+.menuMobil a:hover{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+@media (min-width: 768px){
+    .menuMobil, .menuHamburguesa{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+    }
+}
+
+ @media (max-width: 940px) {
+    .menu{
+        font-size: .75rem;
+    }
+    .titulo{
+        font-size: 0.75rem;
+    }
+
+}
+
 
 /* Boton Agendar Cita */
 .botonAgendarCita{
@@ -160,6 +248,26 @@ header{
     color: #666666;
 }
 
+/* EQUIPO */
+.equipo{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    background-color: rgba(201, 238, 255, 0.4);
+    
+}
 
+.imagen-equipo{
+    width: calc(100% - 40px);
+}
+
+.imagen-equipo img{
+    width: 100%;
+    padding: 40px;
+}
+
+.descripcion-equipo{
+    width: 80%;
+}
 
 
