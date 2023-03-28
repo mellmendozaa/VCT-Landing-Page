@@ -57,6 +57,22 @@ nav .titulo{
 
 .menu a:hover{
     text-decoration: 3px white underline;
+    
+}
+
+.iniciarSesion {
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: rgb(98, 205, 255);
+    
+}
+
+.iniciarSesion a{
+    font-size: 0.9rem;
+}
+
+.iniciarSesion a:hover{
+    text-decoration: none;
 }
 
 .menuHamburguesa{
@@ -113,7 +129,19 @@ nav .titulo{
     text-decoration: underline;
 }
 
-@media (min-width: 768px){
+.menuMobil .iniciarSesion{
+    font-size: 0.9rem;
+    width: 150px;
+    height: 10px;
+    margin: auto;
+}
+
+.menuMobil .iniciarSesion:hover{
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 813px){
     .menuMobil, .menuHamburguesa{
         display: none;
     }
@@ -123,10 +151,15 @@ nav .titulo{
     }
 }
 
- @media (max-width: 940px) {
+ @media (max-width: 1041px) {
     .menu{
         font-size: .75rem;
     }
+
+    .iniciarSesion a{
+        font-size: 0.75rem;
+    }
+
     .titulo{
         font-size: 0.75rem;
     }
