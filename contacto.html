@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>VCT Life Consulting</title>
+
+        <link rel="stylesheet" href="contacto.css">
+        <link rel="stylesheet" href="header.css">
+
+        <!-- fonts -->
+        <script src="https://kit.fontawesome.com/ee3f400cd1.js" crossorigin="anonymous"></script>
+        <script src="path/to/dist/feather.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" >
+    </head>
+    <body>
+
+        <header>
+            
+            <nav>
+                
+                <div class="titulo">
+                    <div class="logo">
+                        <img src="logovct.png">
+                    </div>
+                    <h1>VCT Life Consulting</h1>
+                </div>
+                <div class="menu" id="menuNavegacion">
+                    <ul>
+                        <li>
+                            <a href="index.html">INICIO</a>
+                        </li>
+                        <li>
+                            <a href="servicios.html">SERVICIOS</a>
+                        </li>
+                        <li>
+                            <a href="promotoria.html">QUIENES SOMOS</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html">CONTACTO</a>
+                        </li>
+                        <li>
+                            <a href="empleo.html">TRABAJA CON NOSOTROS</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+        
+                    <button class="menuHamburguesa">
+                        <span class="material-icons">
+                            <!-- icono -->
+                            menu
+                        </span>
+                    </button>
+                
+                
+            </nav>
+        
+            <div class="menuMobil">
+                <a href="index.html">INICIO</a>
+                <a href="servicios.html">SERVICIOS</a>
+                <a href="promotoria.html">QUIENES SOMOS</a>
+                <a href="contacto.html">CONTACTO</a>
+                <a href="empleo.html">TRABAJA CON NOSOTROS</a>
+            </div>
+                
+            <script src="menuHamburguesa.js"></script>
+        </header>
+
+        <div class="contenido">
+            <div class="inicio">
+                <div class="imagen-inicio">
+                </div>
+
+                <div class="informacion-inicio">
+                    <div class="descripcion-inicio">
+                        <h2>VCT Life Consulting</h2>
+                        <div class="forma-cita">
+                            <p>¿Quieres que te contactemos?</p>
+                            <form onsubmit="enviarCorreo(); return false;">
+                                <div class="borde-forma">
+                                    <label  class="label" for="nombre">Nombre</label>
+                                    <input class="input" type="text" name="nombre" id="nombre">
+                                </div>
+                            
+                                <div class="borde-forma">
+                                    <label  class="label" for="apellido">Apellido</label>
+                                    <input class="input" type="text" name="apellido" id="apellido">
+                                </div>
+                                
+                                <div class="borde-forma">
+                                    <label  class="label" for="telefono">Telefono</label>
+                                    <input class="input" type="text" name="telefono" id="telefono">
+                                </div>
+                            
+                                <div class="borde-forma">
+                                    <label  class="label" for="correo">Correo Electronico</label>
+                                    <input class="input" type="text" name="correo" id="correo">
+                                </div>
+                            
+                                <div class="borde-textarea">
+                                    <label class="label-textarea" for="comentarios">Mensaje</label><br>
+                                    <textarea class="textarea" name="comentarios" id="comentarios"></textarea>
+                                </div>
+                            
+                                <div class="enviar-solicitud">
+                                    <input type="submit" value="Enviar">
+                                </div>
+                                
+                            </form>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="gnp">
+                <div class="texto-gnp">
+                    <p>Socios comerciantes de </p>
+                </div>
+                <div class="img-gnp">
+                    <img src="GNP.png" alt="GNP">
+                </div>
+            </div>
+
+            <div class="contacto" >
+                <div class="medios-contacto">
+                    <h2>Medios de Contacto</h2>
+                    <p><i class="fa-solid fa-phone"></i> 5539369002</p>
+                    <p><i class="fa-solid fa-phone"></i> 7771339339</p>
+                    <p><i class="fa-solid fa-envelope"></i></i> z614@ventas.gnp.com.mx</p>
+                    <p><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/vct.mx/">¡Siguenos en Instagram!</a></p>
+                    <button type="button" class="botonAgendarCita"><a href="#">AGENDAR CITA</a></button>
+                </div>
+
+                <div class="horarios-oficina">
+                    <h2>Oficina</h2>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i>Av. Insurgentes Sur 1079, <br> Noche Buena, Benito Juárez, <br> 03720 Ciudad de México, CDMX</p>
+                    <h2>Horarios de Oficina</h2>
+                    <p>Lunes a Viernes <br>
+                        9 am - 6 pm</p>
+                </div>
+                
+                <div class="ubicacion">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.721656297798!2d-99.17936912509165!3d19.38120128188724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff9cfd3572c1%3A0xd3a19933bf2ca038!2sAv.%20Insurgentes%20Sur%201079%2C%20Col%20del%20Valle%20Sur%2C%20Benito%20Ju%C3%A1rez%2C%2003720%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX%2C%20Mexico!5e0!3m2!1sen!2sus!4v1684968691453!5m2!1sen!2sus"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                </div>
+            </div>
+
+            <div hidden class="directorio">
+                <h2>DIRECTORIO</h2>
+            </div>
+
+            <footer>
+                <p>@MelissaMendoza</p>
+        
+            </footer>
+        </div>
+
+    </body>
+</html>

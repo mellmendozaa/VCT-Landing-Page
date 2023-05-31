@@ -1,3 +1,13 @@
+:root{
+    --primary: rgb(170, 119, 255);
+    --second: rgb(201, 238, 255);
+    --third: rgb(151, 222, 255);
+    --fourth: rgb(98, 205, 255);
+    --letra1: rgb(54, 69, 79);
+    --letra2: rgb(113, 121, 126);
+    --letra3: grey;
+}
+
 html, body{
     margin: 0px;
     padding: 0px;
@@ -5,176 +15,49 @@ html, body{
 
 /* HEADER */
 header{
-    background-color: rgb(170, 119, 255);
-    /* display: flex;
-    justify-content: space-around;
-    align-items: baseline; */
+   height: 100vh;
+   background-size: cover; 
 }
 
-nav{
-    position: relative;
-    z-index: 99;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-/* Titulo */
-nav .titulo{
-    color: white;
+/* Inicio */
+.inicio{
     font-family: Arial, Helvetica, sans-serif;
-    padding: 0.5rem 1rem;
-    padding-right: calc(1rem - 5px);
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
-/* Barra de navegacion */
-.menu{
-    display: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    align-items: center;
+.imagen-inicio{
+    grid-column: 1/2;
+    background-image: url(imagen.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.menu ul{
-    list-style: none;
-}
-
-.menu li{
-    display: inline;
-    padding: 10px;
-}
-
-.menu a:link{
-    color: white;
-    text-decoration: none;
-}
-
-.menu a:visited{
-    color:white;
-    text-decoration: none;
-}
-
-.menu a:hover{
-    text-decoration: 3px white underline;
-    
-}
-
-.iniciarSesion {
-    border: 2px solid white;
-    border-radius: 20px;
-    background-color: rgb(98, 205, 255);
-    
-}
-
-.iniciarSesion a{
-    font-size: 0.9rem;
-}
-
-.iniciarSesion a:hover{
-    text-decoration: none;
-}
-
-.menuHamburguesa{
-    appearance: none;
-    outline: none;
-    border: none;
-    background: none;
-    cursor: pointer;
-
-    display: block;
-    width: 2rem;
-    height: 2rem;
-}
-
-.menuHamburguesa span{
-    color: #FFF;
-    font-size: 2rem;
-}
-
-.menuMobil{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 98;
-
-    padding-top: 6rem;
-
-    opacity: 0;
-    transform: translateY(100%);
-    background-color: rgb(170, 119, 255);
-    color: #FFF;
-    transition: 0.3s;
-}
-
-.menuMobil.is-open{
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.menuMobil a{
-    display: block;
-    padding: 1rem;
-    color: #FFF;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.25rem;
-    transition: 0.3s;
-}
-
-.menuMobil a:hover{
-    font-size: 1.5rem;
-    text-decoration: underline;
-}
-
-.menuMobil .iniciarSesion{
-    font-size: 0.9rem;
-    width: 150px;
-    height: 10px;
+.contenido-inicio{
+    grid-column: 2/3 ;
+    width: 80%;
     margin: auto;
+} 
+
+.slogan-inicio{
+    font-size: 1.3rem;
+    color: var(--letra1);
 }
 
-.menuMobil .iniciarSesion:hover{
-    text-decoration: none;
-    font-size: 0.9rem;
+.descripcion-inicio{
+    font-size: 1rem;
+    color: var(--letra2);
 }
-
-@media (min-width: 813px){
-    .menuMobil, .menuHamburguesa{
-        display: none;
-    }
-
-    .menu{
-        display: flex;
-    }
-}
-
- @media (max-width: 1041px) {
-    .menu{
-        font-size: .75rem;
-    }
-
-    .iniciarSesion a{
-        font-size: 0.75rem;
-    }
-
-    .titulo{
-        font-size: 0.75rem;
-    }
-
-}
-
 
 /* Boton Agendar Cita */
 .botonAgendarCita{
     color: white;
     font-weight: bold;
-    background-color:rgb(98, 205, 255);
+    background-color:var(--primary);
     border: 2px solid white;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .botonAgendarCita a:link{
@@ -187,38 +70,33 @@ nav .titulo{
     text-decoration: white;
 }
 
-/* INICIO */
-
-.background-image{
-    background-image: url("inicio4.png");
-    background-size: cover;
-    width: 100%;
-}
-
-.background-color{
-    background-color: rgba(98, 205, 255, 0.4);
-    padding: 100px 0;
-    width: 100%;
-}
-
-
-.contenido-inicio{
-    color: white;
-    width: 100%;
-    text-align: center;
-} 
-
-.descripcion-inicio{
-    width: 60%;
-    margin: auto;
-}
-
 .botonAgendarCita{
     width: 200px;
     justify-content: center;
 }
 
+/* Socios comerciantes de GNP */
+.gnp{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--letra1);
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.texto-gnp{
+    margin: 5px;
+}
+
+.img-gnp img{
+    width: 70px;
+}
+
 /* CATALOGO DE PRODUCTOS */
+.catalogo{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .catalogo h2{
     text-align: center;
 }
@@ -259,13 +137,17 @@ nav .titulo{
     text-align: center;
 }
 
+.productos p{
+    margin: 0px 20px;
+}
+
 .botonSeguroVerMas{
     text-align: center;
     padding: 1rem;
 }
 
 .botonSeguroVerMas button{
-    background-color: rgb(201, 238, 255);
+    background-color: var(--second);
     border: 1px solid #97DEFF;
     height: 30px;
     
@@ -281,31 +163,196 @@ nav .titulo{
     color: #666666;
 }
 
-/* EQUIPO */
-.equipo{
-    width: 100%;
+/* FRASE */
+.frase {
+    height: 150px;
+    background: rgb(170,62,241);
+    background: linear-gradient(90deg, rgba(170,62,241,1) 0%, rgba(217,118,255,1) 50%, rgba(0,212,255,1) 100%);
+
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+.frase h2{
+    padding: 30px 45px;
+}
+
+/* CITA */
+.cita{
+    padding: 25px 25px 50px;
+}
+.cita h2{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: var(--letra1);
+    text-align: center;
+}
+
+.pasos-cita{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pasos-cita img{
+    width: 90%;
+    border-radius: 50%;
+}
+
+.paso{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    background-color: rgba(201, 238, 255, 0.4);
-    
+    grid-template-columns: 200px auto;
+    grid-template-rows: 1fr 2fr;
+
+    width: 500px;
+    min-width: 0;
+
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px #e2e2e2;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.imagen-equipo{
-    width: calc(100% - 40px);
+.paso img{
+    grid-column: 1/2;
+    grid-row: 1/3;
 }
 
-.imagen-equipo img{
+.paso-titulo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    color: var(--letra1);
+
+}
+
+.paso-descripcion{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: var(--letra2);
+}
+
+/* INSTAGRAM */
+.instagram{
+    background-color: rgba(170, 119, 255, 0.4);
     width: 100%;
-    padding: 40px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--letra1);
+    text-align: center;
 }
 
-.descripcion-equipo{
-    width: 80%;
+/* INFORMACION */
+.informacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--letra1);
+    margin: 10px 0;
+}
+
+.contacto-informacion{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.contacto-informacion i{
+    color: var(--primary);
+}
+
+/* FORMA AGENDAR CITA */
+.borde-forma{
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+
+    margin: 6px;
+
+    color: var(--letra2);
+
+    display: grid;
+    grid-template-columns: max-content auto;
+}
+
+.label{
+    grid-column: 1/2;
+
+    padding: 6px;
+}
+
+.input{
+    grid-column: 2/3;
+
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.borde-forma:focus-within{
+    border-color: blue;
+}
+
+.borde-forma input{
+    border: none;
+    outline: none;
+}
+
+.label-textarea{
+    width: 96%;
+    padding: 6px;
+}
+
+.textarea{
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.borde-textarea{
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+
+    margin: 6px;
+    padding: 6px;
+
+    color: var(--letra2);
+}
+
+.borde-textarea:focus-within{
+    border-color: blue;
+}
+
+.borde-textarea textarea{
+    width: 96%;
+    resize: none;
+}
+
+.enviar-solicitud{
+    width: 100%;
+    margin: 0px 6px;
+}
+
+.enviar-solicitud input{
+    color: white;
+
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+
+    padding: 10px;
+
+    align-items: center;
+
+    width: 100px;
 }
 
 /* FOOTER */
 footer{
-    background-color: rgb(170, 119, 255);
+    background-color: var(--primary);
 }
 
 footer p{
@@ -314,4 +361,46 @@ footer p{
     margin: 0;
     padding: 10px;
     text-align: right;
+}
+
+/* RESPONSIVE WEBSITE */
+/* Desaparece menu y se agrupa en menu hamburguesa */
+@media (max-width: 812px){
+    nav{
+        background-color: white;
+    }
+    .inicio{
+        display: block;
+        background-image: url(imagen.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .contenido-inicio{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(18, 18, 18, 0.2);
+        align-items: center;
+        text-align: center;
+    }
+
+    .slogan-inicio{
+        color: white;
+        font-size: 0.8rem;
+        width: 70%;
+        margin: auto;
+    }
+
+    .descripcion-inicio{
+        color: white;
+        font-size: 0.8rem;
+        width: 70%;
+        margin: auto;
+        text-align: justify;
+    }
+
+    .botonAgendarCita{
+        justify-content: center;
+    }
 }
