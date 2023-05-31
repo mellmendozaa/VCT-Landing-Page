@@ -1,0 +1,154 @@
+:root{
+    --primary: rgb(170, 119, 255);
+    --second: rgb(201, 238, 255);
+    --third: rgb(151, 222, 255);
+    --fourth: rgb(98, 205, 255);
+    --letra1: rgb(54, 69, 79);
+    --letra2: rgb(113, 121, 126);
+    --letra3: grey;
+}
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contenido{
+    border: 1px solid #e2e2e2;
+    box-shadow: 0px 0px 5px #e2e2e2;
+
+    margin: 0 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.introduccion{
+    background-image: url("svg.svg");
+    background-color: var(--primary);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    /* background-image: url("svg\ \(2\).svg"); */
+    /* background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom; */
+
+
+    min-height: 400px;
+    padding: 40px 0;
+
+    color: white;
+}
+
+.introduccion h1{
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 70px;
+    font-size: 40px;
+}
+
+.texto{
+    width: 700px;
+    text-align: justify;
+    margin: auto;
+}
+
+.texto p{
+    font-size: 20px;
+}
+
+.requisitos{    
+    margin: 15px 40px;
+}
+
+.requisitos h2{
+    color: var(--letra1);
+    font-size: 30px;
+    margin: 0;
+}
+
+.requisitos-lista{
+    margin: 15px 0;
+    color: var(--letra2);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.requisitos-izq ul, .requisitos-der ul{
+    margin: 0;
+}
+
+
+.vinetaVCT{
+    list-style-image: url(vinetaVCT.png);
+}
+
+.contacto{
+    border-top: 1px solid var(--primary);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contacto i{
+    color: var(--primary);
+}
+
+.contacto p{
+    color: var(--letra1);
+}
+
+/* FOOTER */
+footer{
+    background-color: var(--primary);
+}
+
+footer p{
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+    text-align: right;
+}
+
+@media (max-width: 1110px) {
+    .contenido{
+        margin: 0;
+    }
+}
+
+@media (max-width: 795px){
+    .requisitos-lista{
+        gap: 0;
+    }
+}
+
+@media (max-width: 739px) {
+    .introduccion{
+        padding: 20px;
+    }
+    
+    .introduccion h1{
+        font-size: 35px;
+    }
+
+    .texto{
+        width: 80%;
+    }
+
+    .texto p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 700px){
+    .introduccion{
+        padding: 20px;
+    }
+
+    .texto{
+        width: 80%;
+    }
+}
