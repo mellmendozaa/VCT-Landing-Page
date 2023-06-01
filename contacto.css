@@ -15,7 +15,7 @@ html, body{
 
 .inicio{
     font-family: Arial, Helvetica, sans-serif;
-    height: 80vh;
+    min-height: 80vh;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -177,7 +177,7 @@ html, body{
     flex-wrap: wrap;
     justify-content: space-evenly;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 .contacto h2{
@@ -214,7 +214,7 @@ footer p{
     }
     .inicio{
         display: flex;
-        background-image: url(oficinas.jpeg);
+        background-image: url(oficinas.jpg);
         background-size: cover;
         background-position: center;
         

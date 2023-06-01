@@ -1,48 +1,18 @@
 function enviarCorreo(){
-
-    var nombre = $("#nombre").val();
-    var apellido = $("#apellido").val();
-    var telefono = $("#telefono").val();
-    var correo = $("#correo").val();
-    var comentarios = $("#comentarios").val();
-
-    console.log(nombre, apellido,telefono, correo, comentarios);
-
-    $.ajax(
-        {
-            url: "enviarCorreo.php",
-            method: "post",
-            data: {
-                nombre: nombre,
-                apellido: apellido,
-                telefono: telefono,
-                correo: correo,
-                comentarios: comentarios
-            },
-            success: function(response){
-                alert(response);
-            },
-            error: function(){
-                alert("error");
-            }
+    let datos = {
+        nombre: $('#nombre').val(),
+        apellido: $('#apellido').val(),
+        telefono: $('#telefono').val(),
+        correo: $('#correo').val(),
+        mensaje: $('#comentarios').val()
+    }
+    $.ajax({
+        method: 'POST',
+        url: 'https://prod-14.westus2.logic.azure.com:443/workflows/68a8a4b5c2d8476487dc6a2e7fe4eedf/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=SWzOdAryYvzEHLyoPpKYk0YyBEd1_KZJrK6gqJWnQQ4',
+        contentType: 'application/json',
+        data: JSON.stringify(datos),
+        success: () => {
+            Swal.fire('Enviado', 'success')
         }
-    )
-
-    // var xhr = new XMLHttpRequest();
-    // var url = "enviarCorreo.php";
-    // var correoFormato = "nombre:" + document.getElementById("nombre").value 
-    //                     + "apellido:" + document.getElementById("apellido").value
-    //                     + "telefono:" + document.getElementById("telefono").value
-    //                     + "correo_electronico:" + document.getElementById("correo").value
-    //                     + "comentarios:" + document.getElementById("comentarios").value;
-    
-    // xhr.open("POST", url, true);
-    // xhr.setRequestHeader("Content-type", "application/x-www-form-urleconded");
-    // xhr.onreadystatechange = function(){
-    //     if(xhr.readyState == 4 && xhr.status == 200){
-    //         alert(xhr.responseText);
-    //     }
-    // }
-
-    // xhr.send(correoFormato);
+    });
 }

@@ -22,7 +22,7 @@ header{
 /* Inicio */
 .inicio{
     font-family: Arial, Helvetica, sans-serif;
-    height: 80vh;
+    min-height: 80vh;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -163,6 +163,15 @@ header{
     color: #666666;
 }
 
+/* INFOGRAFIA */
+.infografia{
+    text-align: center;
+}
+
+.infografia img{
+    width: 60%;
+}
+
 /* FRASE */
 .frase {
     height: 150px;
@@ -239,12 +248,53 @@ header{
 
 /* INSTAGRAM */
 .instagram{
+    display: flex;
+    
+}
+
+.instagram-embeded{
     background-color: rgba(170, 119, 255, 0.4);
-    width: 100%;
+    min-width: 50%;
+    padding: 50px 20px;
+    margin: 20px;
     
     font-family: Arial, Helvetica, sans-serif;
     color: var(--letra1);
     text-align: center;
+}
+
+.instagram-frase{
+    display: grid;
+
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: var(--letra1);
+    font-size: 40px;
+    
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0 40px;
+}
+
+.instagram-frase h2{
+    margin: 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote-izq{
+    width: 100%;
+    text-align: left;
+}
+
+.quote-der{
+    width: 100%;
+    text-align: right;
+}
+
+.instagram-frase img{
+    width: 50px;
 }
 
 /* INFORMACION */
@@ -255,7 +305,7 @@ header{
     justify-content: space-around;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--letra1);
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 .contacto-informacion{
@@ -371,7 +421,7 @@ footer p{
     }
     .inicio{
         display: block;
-        background-image: url(imagen.png);
+        background-image: url(imagen.jpg);
         background-size: cover;
         background-position: center;
     }

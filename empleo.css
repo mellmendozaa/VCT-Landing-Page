@@ -113,6 +113,17 @@ footer p{
     text-align: right;
 }
 
+/* RESPONSIVE WEBSITE */
+
+/* MENU */
+@media (max-width: 812px){
+    nav{
+        background-color: white;
+    }
+    
+}
+
+/* PAGINA */
 @media (max-width: 1110px) {
     .contenido{
         margin: 0;

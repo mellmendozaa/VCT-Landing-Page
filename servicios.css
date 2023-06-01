@@ -27,7 +27,7 @@ html, body{
 /* INICIO */
 .inicio{
     font-family: Arial, Helvetica, sans-serif;
-    height: 80vh;
+    min-height: 80vh;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -246,7 +246,7 @@ html, body{
 
     /* background-color: var(--primary); */
     padding-top: 20px;
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 .contacto-informacion{
@@ -367,8 +367,7 @@ footer p{
         display: flex;
         background-image: url(servicios-intro.jpg);
         background-size: cover;
-        background-position: center;
-        
+        background-position: center;  
     }
     
     .contenido-inicio{
