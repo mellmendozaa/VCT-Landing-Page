@@ -26,7 +26,7 @@ html, body{
 .imagen-inicio{
     grid-column: 1/2;
 
-    background-image: url(promotoria-inicio.jpg);
+    background-image: url("promotoria-inicio-min.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -418,7 +418,7 @@ footer p{
     }
     .inicio{
         display: flex;
-        background-image: url(promotoria-inicio.jpg);
+        background-image: url("promotoria-inicio-min.jpg");
         background-size: cover;
         background-position: center;
     }

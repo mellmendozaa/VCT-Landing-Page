@@ -29,7 +29,7 @@ header{
 
 .imagen-inicio{
     grid-column: 1/2;
-    background-image: url(imagen.jpg);
+    background-image: url("imagen-min.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -421,7 +421,7 @@ footer p{
     }
     .inicio{
         display: block;
-        background-image: url(imagen.jpg);
+        background-image: url("imagen-min.jpg");
         background-size: cover;
         background-position: center;
     }

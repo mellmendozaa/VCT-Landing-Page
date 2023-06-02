@@ -22,7 +22,7 @@ html, body{
 
 .imagen-inicio{
     grid-column: 1/2;
-    background-image: url(oficinas.jpg);
+    background-image: url("oficinas-min.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -214,7 +214,7 @@ footer p{
     }
     .inicio{
         display: flex;
-        background-image: url(oficinas.jpg);
+        background-image: url("oficinas-min.jpg");
         background-size: cover;
         background-position: center;
         

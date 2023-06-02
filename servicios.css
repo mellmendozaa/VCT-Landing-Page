@@ -35,7 +35,7 @@ html, body{
 .imagen-inicio{
     grid-column: 1/2;
 
-    background-image: url(servicios-intro.jpg);
+    background-image: url("servicios-intro-min.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -191,7 +191,7 @@ html, body{
     width: 80%;
     height: 100%;
     
-    background-image: url("paso3.jpg");
+    background-image: url("paso3-min.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -201,7 +201,7 @@ html, body{
     width: 80%;
     height: 100%;
     
-    background-image: url("gastos-medicos.jpg");
+    background-image: url("gastos-medicos-min.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -210,7 +210,7 @@ html, body{
 .foto-educacion{
     width: 80%;
     height: 100%;
-    background-image: url("seguro-educacion.jpg");
+    background-image: url("seguro-educacion-min.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -219,7 +219,7 @@ html, body{
 .foto-autos{
     width: 80%;
     height: 100%;
-    background-image: url("seguro-auto.jpg");
+    background-image: url("seguro-auto-min.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -228,7 +228,7 @@ html, body{
 .foto-hogar-mascotas{
     width: 80%;
     height: 100%;
-    background-image: url("seguro-hogar-mascotas.jpg");
+    background-image: url("seguro-hogar-mascotas-min.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -365,7 +365,7 @@ footer p{
     }
     .inicio{
         display: flex;
-        background-image: url(servicios-intro.jpg);
+        background-image: url("servicios-intro-min.jpg");
         background-size: cover;
         background-position: center;  
     }
