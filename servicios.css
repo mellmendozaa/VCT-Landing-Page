@@ -135,8 +135,8 @@ html, body{
 /* SEGUROS */
 .seguros{
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: min-content auto;
+    grid-template-columns: 60% auto;
+    /* grid-template-rows: min-content auto; */
     column-gap: 20px;
 
     height: 400px;
@@ -158,80 +158,74 @@ html, body{
 
 .foto-seguro{
     grid-column: 2/3;
-    grid-row: 1/3;
+    grid-row: 1/2;
     
 }
 
-.titulo-seguro{
+.info-seguro{
     grid-column: 1/2;
-    grid-row: 1/2;
 
-    text-align: center;
     color: var(--primary);
     background-color: rgb(237, 237, 235);
-    padding: 0px 15px;
+    padding: 0px 15px;     
 }
 
-.descripcion-seguro{
-    grid-column: 1/2;
-    grid-row: 2/3;
+.info-seguro h2{
+    text-align: center;
+}
+
+.info-seguro h3, .info-seguro li, .info-seguro p{
+    color: var(--letra2);
+}
+
+ /* .titulo-seguro{
+     grid-column: 1/2;
+     grid-row: 1/2;
+
+     text-align: center;
+     color: var(--primary);
+    background-color: rgb(237, 237, 235);
+    padding: 0px 15px; 
+} 
+
+ .descripcion-seguro{ 
+     grid-column: 1/2; 
+     grid-row: 2/3; 
 
     color: var(--letra2);
     background-color: rgb(237, 237, 235);
     padding: 0px 15px;
-
-    
-}
+}  */
 
 .vinetaVCT{
     list-style-image: url(vinetaVCT.png);
 }
 
-.foto-inversion{
-    width: 80%;
+.foto-seguro > div {
     height: 100%;
-    
-    background-image: url("paso3-min.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.foto-inversion{
+    background-image: url("paso3-min.jpg");
 }
 
 .foto-gastosMedicos{
-    width: 80%;
-    height: 100%;
-    
     background-image: url("gastos-medicos-min.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .foto-educacion{
-    width: 80%;
-    height: 100%;
     background-image: url("seguro-educacion-min.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .foto-autos{
-    width: 80%;
-    height: 100%;
     background-image: url("seguro-auto-min.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .foto-hogar-mascotas{
-    width: 80%;
-    height: 100%;
     background-image: url("seguro-hogar-mascotas-min.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 /* INFORMACION */
@@ -250,8 +244,11 @@ html, body{
 }
 
 .contacto-informacion{
+    min-width: 250px;
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .contacto-informacion i{
@@ -259,6 +256,10 @@ html, body{
 }
 
 /* FORMA AGENDAR CITA */
+.forma-cita{
+    max-width: 400px;
+}
+
 .borde-forma{
     border: 1px solid var(--primary);
     border-radius: 5px;
@@ -396,5 +397,24 @@ footer p{
 
     .botonAgendarCita{
         justify-content: center;
+    }
+}
+
+/* CUADROS SERVICIOS */
+@media (max-width: 975px){
+    .seguros{
+        grid-template-rows: 300px 1fr;
+        grid-template-columns: auto;
+        height: auto;
+    }
+
+    .foto-seguro{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .info-seguro{
+        grid-column: 1/2;
+        grid-row: 2/3;
     }
 }

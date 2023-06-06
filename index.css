@@ -106,6 +106,7 @@ header{
 }
 
 .productos > ul{
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 1rem;
@@ -263,6 +264,10 @@ header{
     text-align: center;
 }
 
+.instagram-embeded h2{
+    display: none;
+}
+
 .instagram-frase{
     display: grid;
 
@@ -303,14 +308,20 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+
     font-family: Arial, Helvetica, sans-serif;
     color: var(--letra1);
+
+    padding-top: 20px;
     margin: 30px 0;
 }
 
 .contacto-informacion{
+    min-width: 250px;
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .contacto-informacion i{
@@ -318,6 +329,10 @@ header{
 }
 
 /* FORMA AGENDAR CITA */
+.forma-cita{
+    max-width: 400px;
+}
+
 .borde-forma{
     border: 1px solid var(--primary);
     border-radius: 5px;
@@ -420,7 +435,7 @@ footer p{
         background-color: white;
     }
     .inicio{
-        display: block;
+        display: flex;
         background-image: url("imagen-min.jpg");
         background-size: cover;
         background-position: center;
@@ -452,5 +467,35 @@ footer p{
 
     .botonAgendarCita{
         justify-content: center;
+    }
+}
+
+/* INSTAGRAM Y FRASE */
+@media (max-width : 1030px){
+    .instagram-embeded{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .instagram-embeded h2{
+        display: block;
+    }
+    
+    .instagram-frase{
+        display: none;
+    }
+}
+
+@media (max-width: 950px){
+    .infografia img{
+        width: 80%;
+    }
+}
+
+@media (max-width: 669px){
+    .informacion{
+        display: block;
+        margin: 30px 20px;
     }
 }
