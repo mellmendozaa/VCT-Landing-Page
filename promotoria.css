@@ -42,6 +42,10 @@ html, body{
     margin: auto;
 } 
 
+.informacion-inicio{
+    width: 100%;
+}
+
 .slogan-inicio{
     display: grid;
     grid-template-columns: max-content max-content;
@@ -532,10 +536,6 @@ footer p{
         margin: auto;
     }
 
-    .slogan-logo{
-        background-image: url("logovct3.png");
-    }
-
     .descripcion-inicio{
         color: white;
         font-size: 0.8rem;
@@ -693,10 +693,12 @@ footer p{
 
     .slogan-texto{
         width: 200px;
+        text-align: right;
     }
 
     .slogan-texto p{
         font-size: 0.7rem;
+        
     }
 }
 

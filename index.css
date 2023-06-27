@@ -181,6 +181,7 @@ header{
 }
 
 .productos p{
+    color: var(--letra1);
     margin: 0px 20px;
 }
 
@@ -215,21 +216,6 @@ header{
     width: 60%;
 }
 
-/* FRASE */
-.frase {
-    height: 150px;
-    background: rgb(170,62,241);
-    background: linear-gradient(90deg, rgba(170,62,241,1) 0%, rgba(217,118,255,1) 50%, rgba(0,212,255,1) 100%);
-
-    color: white;
-    font-family: 'Dancing Script', cursive;
-    font-size: 30px;
-    text-align: center;
-}
-
-.frase h2{
-    padding: 30px 45px;
-}
 
 /* CITA */
 /* .cita{
@@ -497,10 +483,6 @@ footer p{
         font-size: 0.8rem;
         width: 70%;
         margin: auto;
-    }
-
-    .slogan-logo{
-        background-image: url("logovct3.png");
     }
 
     .descripcion-inicio{

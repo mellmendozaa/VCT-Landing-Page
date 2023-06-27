@@ -62,7 +62,7 @@ html, body{
 
 .slogan-texto{
     grid-column: 2/3;
-    width: 300px;
+    /* width: 300px; */
     font-family: var(--letraMarca);
 }
 

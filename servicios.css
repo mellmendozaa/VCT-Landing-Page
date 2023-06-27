@@ -281,7 +281,7 @@ html, body{
 }
 
 .foto-gastosMedicos{
-    background-image: url("gastos-medicos-min.jpg");
+    background-image: url("medicos.jpg");
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -474,10 +474,6 @@ footer p{
         margin: auto;
     }
 
-    .slogan-logo{
-        background-image: url("logovct3.png");
-    }
-
     .descripcion-inicio{
         color: white;
         font-size: 0.8rem;
@@ -539,7 +535,22 @@ footer p{
     }
 }
 
+@media (max-width: 525px){
+    .informacionSeguros{
+        margin: 20px 15px;
+    }
+
+    .menu-seguros ul{
+        padding: 0;
+    }
+
+    .catalogo-seguros{
+        margin: 25px;
+    }
+}
+
 @media (max-width: 459px){
+
     .slogan-logo{
         width: 80px;
     }
@@ -554,5 +565,9 @@ footer p{
 
     .slogan-texto p{
         font-size: 0.6rem;
+    }
+
+    .menu-seguros{
+        font-size: 1rem;
     }
 }
