@@ -6,6 +6,10 @@
     --letra1: rgb(54, 69, 79);
     --letra2: rgb(113, 121, 126);
     --letra3: grey;
+    --background: rgba(113, 63, 173, 0.62);
+
+    --letraArial: Arial, Helvetica, sans-serif;
+    --letraMarca: 'IBM Plex Serif', serif;
 }
 
 html, body{
@@ -17,8 +21,8 @@ html, body{
 
 /* Inicio */
 .inicio{
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 85vh;
+    font-family: var(--letraMarca);
+    min-height: 80vh;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -39,23 +43,53 @@ html, body{
 } 
 
 .slogan-inicio{
-    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 20px;
+
+    font-size: 1rem;
     color: var(--letra1);
+}
+
+.slogan-logo{
+    background-image: url("logovct.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 1/2;
+
+    width: 130px;
+}
+
+.slogan-texto{
+    grid-column: 2/3;
+    width: 300px;
 }
 
 .descripcion-inicio{
     font-size: 1rem;
     color: var(--letra2);
+    text-align: justify;
 }
 
 /* Boton Agendar Cita */
 .botonAgendarCita{
+    width: 100%;
+}
+.botonAgendarCita a{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+
     color: white;
     font-weight: bold;
+    font-size: 14px;
     background-color:var(--primary);
-    border: 2px solid white;
+    border: 2px solid var(--primary);
     height: 40px;
-    border-radius: 5px;
+    border-radius: 50px;
+    margin: 0 auto;
 }
 
 .botonAgendarCita a:link{
@@ -68,14 +102,20 @@ html, body{
     text-decoration: white;
 }
 
-.botonAgendarCita{
+.botonAgendarCita a{
     width: 200px;
     justify-content: center;
 }
 
+.botonAgendarCita img{
+    width: 11px;
+
+    transform: rotate(40deg);
+}
+
 /* Socios comerciantes de GNP */
 .gnp{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--letraMarca);
     color: var(--letra1);
     display: flex;
     justify-content: center;
@@ -95,7 +135,7 @@ html, body{
 .biografia{
     margin: 10px 50px;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--letraMarca);
 }
 
 .bio-intro p{
@@ -180,7 +220,7 @@ html, body{
 
     margin:50px;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--letraMarca);
     color: var(--letra1);
     text-align: justify;
     
@@ -205,7 +245,7 @@ html, body{
     gap: 30px;
     justify-content: center;
     
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--letraMarca);
 }
 
 .vm-cuadro{
@@ -234,7 +274,7 @@ html, body{
     grid-template-columns: 2fr 1fr;
 
     margin: 10px 50px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--letraMarca);
 }
 
 .equipo-descripcion{
@@ -299,7 +339,7 @@ html, body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--letraMarca);
     color: var(--letra1);
     margin: 30px 0;
 }
@@ -479,8 +519,8 @@ footer p{
     .contenido-inicio{
         display: flex;
         width: 100%;
-        height: 100%;
-        background-color: rgba(18, 18, 18, 0.2);
+        margin: 0;
+        background-color: var(--background);
         align-items: center;
         text-align: center;
     }
@@ -490,6 +530,10 @@ footer p{
         font-size: 0.8rem;
         width: 70%;
         margin: auto;
+    }
+
+    .slogan-logo{
+        background-image: url("logovct3.png");
     }
 
     .descripcion-inicio{
@@ -624,5 +668,52 @@ footer p{
 
     .vision-mision{
         gap: 0px;
+    }
+}
+
+@media (max-width: 669px){
+    .informacion{
+        display: block;
+        margin: 30px 20px;
+    }
+
+    .mapa-informacion iframe{
+        width: 350px !important;
+    }
+}
+
+@media (max-width: 599px){
+    .slogan-logo{
+        width: 100px;
+    }
+
+    .slogan-logo img{
+        margin-top: 20px;
+    }
+
+    .slogan-texto{
+        width: 200px;
+    }
+
+    .slogan-texto p{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 459px){
+    .slogan-logo{
+        width: 80px;
+    }
+
+    .slogan-logo img{
+        margin-top: 24px;
+    }
+
+    .slogan-texto{
+        width: 180px;
+    }
+
+    .slogan-texto p{
+        font-size: 0.6rem;
     }
 }

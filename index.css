@@ -6,6 +6,11 @@
     --letra1: rgb(54, 69, 79);
     --letra2: rgb(113, 121, 126);
     --letra3: grey;
+    --background: rgba(113, 63, 173, 0.62);
+    --azulm: #041A5C;
+
+    --letraArial: Arial, Helvetica, sans-serif;
+    --letraMarca: 'IBM Plex Serif', serif;
 }
 
 html, body{
@@ -21,7 +26,7 @@ header{
 
 /* Inicio */
 .inicio{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--letraMarca);
     min-height: 80vh;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -41,23 +46,53 @@ header{
 } 
 
 .slogan-inicio{
-    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 20px;
+
+    font-size: 1rem;
     color: var(--letra1);
+}
+
+.slogan-logo{
+    background-image: url("logovct.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 1/2;
+
+    width: 130px;
+}
+
+.slogan-texto{
+    grid-column: 2/3;
+    width: 300px;
 }
 
 .descripcion-inicio{
     font-size: 1rem;
     color: var(--letra2);
+    text-align: justify;
 }
 
 /* Boton Agendar Cita */
-.botonAgendarCita{
+/* .botonAgendarCita{
+    width: 100%;
+}
+.botonAgendarCita a{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+
     color: white;
     font-weight: bold;
+    font-size: 14px;
     background-color:var(--primary);
-    border: 2px solid white;
+    border: 2px solid var(--primary);
     height: 40px;
-    border-radius: 5px;
+    border-radius: 50px;
+    margin: 0 auto;
 }
 
 .botonAgendarCita a:link{
@@ -70,14 +105,20 @@ header{
     text-decoration: white;
 }
 
-.botonAgendarCita{
+.botonAgendarCita a{
     width: 200px;
     justify-content: center;
 }
 
+.botonAgendarCita img{
+    width: 11px;
+
+    transform: rotate(40deg);
+} */
+
 /* Socios comerciantes de GNP */
 .gnp{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--letraMarca);
     color: var(--letra1);
     display: flex;
     justify-content: center;
@@ -94,10 +135,11 @@ header{
 
 /* CATALOGO DE PRODUCTOS */
 .catalogo{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--letraMarca);
 }
 
 .catalogo h2{
+    color: var(--letra1);
     text-align: center;
 }
 
@@ -190,7 +232,7 @@ header{
 }
 
 /* CITA */
-.cita{
+/* .cita{
     padding: 25px 25px 50px;
 }
 .cita h2{
@@ -245,7 +287,7 @@ header{
     grid-column: 2/3;
     grid-row: 2/3;
     color: var(--letra2);
-}
+} */
 
 /* INSTAGRAM */
 .instagram{
@@ -259,7 +301,7 @@ header{
     padding: 50px 20px;
     margin: 20px;
     
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--letraMarca);
     color: var(--letra1);
     text-align: center;
 }
@@ -309,7 +351,7 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--letraMarca);
     color: var(--letra1);
 
     padding-top: 20px;
@@ -444,8 +486,8 @@ footer p{
     .contenido-inicio{
         display: flex;
         width: 100%;
-        height: 100%;
-        background-color: rgba(18, 18, 18, 0.2);
+        margin: 0;
+        background-color: var(--background);
         align-items: center;
         text-align: center;
     }
@@ -455,6 +497,10 @@ footer p{
         font-size: 0.8rem;
         width: 70%;
         margin: auto;
+    }
+
+    .slogan-logo{
+        background-image: url("logovct3.png");
     }
 
     .descripcion-inicio{
@@ -497,5 +543,45 @@ footer p{
     .informacion{
         display: block;
         margin: 30px 20px;
+    }
+
+    .mapa-informacion iframe{
+        width: 350px !important;
+    }
+}
+
+@media (max-width: 599px){
+    .slogan-logo{
+        width: 100px;
+    }
+
+    .slogan-logo img{
+        margin-top: 20px;
+    }
+
+    .slogan-texto{
+        width: 200px;
+    }
+
+    .slogan-texto p{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 459px){
+    .slogan-logo{
+        width: 80px;
+    }
+
+    .slogan-logo img{
+        margin-top: 24px;
+    }
+
+    .slogan-texto{
+        width: 180px;
+    }
+
+    .slogan-texto p{
+        font-size: 0.6rem;
     }
 }

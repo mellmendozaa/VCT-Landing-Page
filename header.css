@@ -6,6 +6,11 @@
     --letra1: rgb(54, 69, 79);
     --letra2: rgb(113, 121, 126);
     --letra3: grey;
+    --background: rgba(113, 63, 173, 0.62);
+    --azulm: #041A5C;
+
+    --letraArial: Arial, Helvetica, sans-serif;
+    --letraMarca: 'IBM Plex Serif', serif;
 }
 
 nav{
@@ -18,23 +23,39 @@ nav{
 }
 
 /* Titulo */
-.titulo{
+/* .titulo{
     display: flex;
     align-items: baseline;
     gap: 5px;
+} */
+
+.titulo{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 5px;
 }
 
 .logo{
     margin: auto;
+    grid-column: 1/2;
 }
 
 .logo img{
     width: 50px;
 }
 
+.titulo h1{
+    grid-column: 2/3;
+    color: var(--azulm);
+}
+
+.titulo{
+    text-decoration: none;
+}
+
 nav .titulo{
     color: var(--letra2);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--letraMarca);
     padding: 0.5rem 1rem;
     padding-right: calc(1rem - 5px);
 }
@@ -42,7 +63,7 @@ nav .titulo{
 /* Barra de navegacion */
 .menu{
     display: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--letraMarca);
     font-size: 18px;
     align-items: center;
 }
@@ -117,6 +138,7 @@ nav .titulo{
 }
 
 .menuMobil a{
+    font-family: var(--letraMarca);
     display: block;
     padding: 1rem;
     color: #FFF;

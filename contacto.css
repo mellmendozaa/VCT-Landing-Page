@@ -6,6 +6,10 @@
     --letra1: rgb(54, 69, 79);
     --letra2: rgb(113, 121, 126);
     --letra3: grey;
+    --background: rgba(113, 63, 173, 0.62);
+    
+    --letraArial: Arial, Helvetica, sans-serif;
+    --letraMarca: 'IBM Plex Serif', serif;
 }
 
 html, body{
@@ -14,7 +18,7 @@ html, body{
 }
 
 .inicio{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--letraMarca);
     min-height: 80vh;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -34,9 +38,37 @@ html, body{
     margin: auto;
 } 
 
+.slogan-inicio{
+    display: grid;
+    grid-template-columns: max-content auto;
+    grid-gap: 20px;
+
+    max-width: 400px;
+    margin: auto;
+
+    font-size: 1rem;
+    color: var(--letra1);
+}
+
+.slogan-logo{
+    background-image: url("logovct.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 1/2;
+
+    width: 130px;
+}
+
+.slogan-texto{
+    grid-column: 2/3;
+    width: 300px;
+    font-family: var(--letraMarca);
+}
+
 .descripcion-inicio{
     margin: auto;
-    width: 80%;
+    max-width: 400px;
 }
 
 .descripcion-inicio h2{
@@ -130,7 +162,7 @@ html, body{
 }
 
 /* Boton Agendar Cita */
-.botonAgendarCita{
+/* .botonAgendarCita{
     color: white;
     font-weight: bold;
     background-color:var(--primary);
@@ -152,11 +184,11 @@ html, body{
 .botonAgendarCita{
     width: 200px;
     justify-content: center;
-}
+} */
 
 /* Socios comerciantes de GNP */
 .gnp{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--letraMarca);
     color: var(--letra1);
     display: flex;
     justify-content: center;
@@ -176,7 +208,7 @@ html, body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--letraMarca);
     margin: 30px 0;
 }
 
@@ -206,6 +238,16 @@ footer p{
 }
 
 /* RESPONSIVE WEBSITE */
+
+@media (max-width: 950px){
+    .contacto{
+        gap: 15px;
+    }
+
+    .medios-contacto, .horarios-oficina{
+        margin: 10px;
+    }
+}
 
 /* Desaparece menu y se agrupa en menu hamburguesa */
 @media (max-width: 812px){
@@ -289,5 +331,13 @@ footer p{
 
     .botonAgendarCita{
         justify-content: center;
+    }
+}
+
+@media (max-width: 669px){
+    
+
+    .ubicacion iframe{
+        width: 350px !important;
     }
 }

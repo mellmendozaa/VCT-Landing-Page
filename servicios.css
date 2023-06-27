@@ -6,6 +6,10 @@
     --letra1: rgb(54, 69, 79);
     --letra2: rgb(113, 121, 126);
     --letra3: grey;
+    --background: rgba(113, 63, 173, 0.62);
+
+    --letraArial: Arial, Helvetica, sans-serif;
+    --letraMarca: 'IBM Plex Serif', serif;
 }
 
 html {
@@ -26,7 +30,7 @@ html, body{
 
 /* INICIO */
 .inicio{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--letraMarca);
     min-height: 80vh;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -48,23 +52,57 @@ html, body{
 } 
 
 .slogan-inicio{
-    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 20px;
+
+    font-size: 1rem;
     color: var(--letra1);
+}
+
+.slogan-logo{
+    background-image: url("logovct.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 1/2;
+
+    width: 130px;
+}
+
+
+
+.slogan-texto{
+    grid-column: 2/3;
+    width: 300px;
 }
 
 .descripcion-inicio{
     color: var(--letra2);
     font-size: 1rem;
+    text-align: justify;
 }
 
 
 .botonAgendarCita{
+    width: 100%;
+    /* margin: 10px 0; */
+}
+
+.botonAgendarCita a{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+
     color: white;
     font-weight: bold;
+    font-size: 14px;
     background-color:var(--primary);
-    border: 2px solid white;
+    border: 2px solid var(--primary);
     height: 40px;
-    border-radius: 5px;
+    border-radius: 50px;
+    margin: 0 auto;
 }
 
 .botonAgendarCita a:link{
@@ -77,9 +115,15 @@ html, body{
     text-decoration: white;
 }
 
-.botonAgendarCita{
+.botonAgendarCita a{
     width: 200px;
     justify-content: center;
+}
+
+.botonAgendarCita img{
+    width: 11px;
+
+    transform: rotate(40deg);
 }
 
 /* INFORMACION */
@@ -89,15 +133,19 @@ html, body{
     padding: 15px;
 }*/
 
+.informacionSeguros{
+    margin: 20px 50px;
+}
+
 .informacionSeguros p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--letraMarca);
     color: var(--letra1);
 }
 
 /* MENU */
 .menu-seguros{
     color: var(--letra1);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--letraMarca);
     font-size: 1.2rem;
     text-align: center;
 }
@@ -133,49 +181,68 @@ html, body{
 }
 
 /* SEGUROS */
+.catalogo-seguros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
 .seguros{
     display: grid;
-    grid-template-columns: 60% auto;
+    grid-template-rows: 350px auto;
     /* grid-template-rows: min-content auto; */
-    column-gap: 20px;
+    /* row-gap: 20px; */
 
-    height: 400px;
-    width: 90%;
+    /* height: 600px; */
+    width: 500px;
     
 
-    /* border: 1px solid #e2e2e2;
+    border: 1px solid #e2e2e2;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px var(--letra2); */
+    box-shadow: 0px 0px 5px var(--letra2);
+
     
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     margin-bottom: 30px;
     
 
-    font-family: Arial, Helvetica, sans-serif;
-    /* background-color: rgba(151, 222, 255, 0.4); */
+    font-family: var(--letraMarca);
+    background-color: rgb(237, 237, 235);
 }
 
 .foto-seguro{
-    grid-column: 2/3;
+    /* grid-column: 2/3; */
     grid-row: 1/2;
+    border-radius: 10px;
     
 }
 
+
 .info-seguro{
-    grid-column: 1/2;
+    grid-row: 2/3;
 
     color: var(--primary);
     background-color: rgb(237, 237, 235);
-    padding: 0px 15px;     
+    padding: 0px 15px;    
+    border-radius: 10px; 
 }
 
 .info-seguro h2{
     text-align: center;
 }
 
-.info-seguro h3, .info-seguro li, .info-seguro p{
+.info-seguro h3, .info-seguro li{
     color: var(--letra2);
+}
+
+.info-seguro p{
+    color: white;
+}
+
+.info-seguro .botonAgendarCita{
+    margin: 10px 0;
 }
 
  /* .titulo-seguro{
@@ -210,22 +277,42 @@ html, body{
 
 .foto-inversion{
     background-image: url("paso3-min.jpg");
+    border-radius: 10px 10px 0px 0px;
 }
 
 .foto-gastosMedicos{
     background-image: url("gastos-medicos-min.jpg");
+    border-radius: 10px 10px 0px 0px;
 }
 
 .foto-educacion{
     background-image: url("seguro-educacion-min.jpg");
+    border-radius: 10px 10px 0px 0px;
 }
 
 .foto-autos{
     background-image: url("seguro-auto-min.jpg");
+    border-radius: 10px 10px 0px 0px;
 }
 
 .foto-hogar-mascotas{
     background-image: url("seguro-hogar-mascotas-min.jpg");
+    border-radius: 10px 10px 0px 0px;
+}
+
+.foto-empresarial{
+    background-image: url("empresarial.jpg");
+    border-radius: 10px 10px 0px 0px;
+}
+
+.foto-ahorro{
+    background-image: url("ahorro.jpg");
+    border-radius: 10px 10px 0px 0px;
+}
+
+.foto-retiro{
+    background-image: url("retiro.jpg");
+    border-radius: 10px 10px 0px 0px;
 }
 
 /* INFORMACION */
@@ -235,7 +322,7 @@ html, body{
     flex-wrap: wrap;
     justify-content: space-around;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--letraMarca);
     color: var(--letra1);
 
     /* background-color: var(--primary); */
@@ -374,8 +461,8 @@ footer p{
     .contenido-inicio{
         display: flex;
         width: 100%;
-        height: 100%;
-        background-color: rgba(18, 18, 18, 0.2);
+        margin: 0;
+        background-color: var(--background);
         align-items: center;
         text-align: center;
     }
@@ -385,6 +472,10 @@ footer p{
         font-size: 0.8rem;
         width: 70%;
         margin: auto;
+    }
+
+    .slogan-logo{
+        background-image: url("logovct3.png");
     }
 
     .descripcion-inicio{
@@ -416,5 +507,52 @@ footer p{
     .info-seguro{
         grid-column: 1/2;
         grid-row: 2/3;
+    }
+}
+
+@media (max-width: 669px){
+    .informacion{
+        display: block;
+        margin: 30px 20px;
+    }
+
+    .mapa-informacion iframe{
+        width: 350px !important;
+    }
+}
+
+@media (max-width: 599px){
+    .slogan-logo{
+        width: 100px;
+    }
+
+    .slogan-logo img{
+        margin-top: 20px;
+    }
+
+    .slogan-texto{
+        width: 200px;
+    }
+
+    .slogan-texto p{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 459px){
+    .slogan-logo{
+        width: 80px;
+    }
+
+    .slogan-logo img{
+        margin-top: 24px;
+    }
+
+    .slogan-texto{
+        width: 180px;
+    }
+
+    .slogan-texto p{
+        font-size: 0.6rem;
     }
 }

@@ -9,11 +9,15 @@
 
         <link rel="stylesheet" href="contacto.css">
         <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet"  href="botonAgendarCita.css">
 
         <!-- fonts -->
         <script src="https://kit.fontawesome.com/ee3f400cd1.js" crossorigin="anonymous"></script>
         <script src="path/to/dist/feather.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
         <!-- AJAX JS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -27,12 +31,12 @@
             
             <nav>
                 
-                <div class="titulo">
+                <a class="titulo" href="index.html">
                     <div class="logo">
                         <img src="logovct.png">
                     </div>
                     <h1>VCT Life Consulting</h1>
-                </div>
+                </a>
                 <div class="menu" id="menuNavegacion">
                     <ul>
                         <li>
@@ -81,8 +85,19 @@
                 </div>
 
                 <div class="informacion-inicio">
+
+                    <!-- NUEVO -->
+                    <div class="slogan-inicio">
+                        <div class="slogan-logo">
+                            
+                        </div>
+                        <div class="slogan-texto">
+                            <h1>VCT <br> Life  Consulting</h1>
+                        </div>
+                    </div>
+
                     <div class="descripcion-inicio">
-                        <h2>VCT Life Consulting</h2>
+                        <!-- <h2>VCT Life Consulting</h2> -->
                         <div class="forma-cita">
                             <p>¿Quieres que te contactemos?</p>
                             <form onsubmit="enviarCorreo(); return false;">
@@ -139,12 +154,17 @@
                     <p><i class="fa-solid fa-phone"></i> 7771339339</p>
                     <p><i class="fa-solid fa-envelope"></i></i> z614@ventas.gnp.com.mx</p>
                     <p><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/vct.mx/">¡Siguenos en Instagram!</a></p>
-                    <button type="button" class="botonAgendarCita"><a href="#">AGENDAR CITA</a></button>
+                    <div class="botonAgendarCita">
+                        <a href="#" target="_blank">
+                            <p>AGENDAR CITA</p>
+                            <img src="lapizvct2.png">
+                        </a>
+                    </div>
                 </div>
 
                 <div class="horarios-oficina">
                     <h2>Oficina</h2>
-                    <p><i class="fa-sharp fa-solid fa-location-dot"></i>Av. Insurgentes Sur 1079, <br> Noche Buena, Benito Juárez, <br> 03720 Ciudad de México, CDMX</p>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i>Av. Insurgentes Sur 1079, Piso 14 <br> Noche Buena, Benito Juárez, <br> 03720 Ciudad de México, CDMX</p>
                     <h2>Horarios de Oficina</h2>
                     <p>Lunes a Viernes <br>
                         9 am - 6 pm</p>
