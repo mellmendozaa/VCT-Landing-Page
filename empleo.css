@@ -97,8 +97,13 @@ html, body{
     color: var(--primary);
 }
 
-.contacto p{
+.contacto p, .contacto a{
     color: var(--letra1);
+}
+
+.contacto a{
+    text-decoration: none;
+    margin: 16px 0;
 }
 
 /* FOOTER */

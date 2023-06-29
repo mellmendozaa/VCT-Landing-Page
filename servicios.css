@@ -31,7 +31,7 @@ html, body{
 /* INICIO */
 .inicio{
     font-family: var(--letraMarca);
-    min-height: 80vh;
+    min-height: 85vh;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -50,6 +50,10 @@ html, body{
     width: 80%;
     margin: auto;
 } 
+
+.informacion-inicio{
+    width: 100%;
+}
 
 .slogan-inicio{
     display: grid;
@@ -336,6 +340,13 @@ html, body{
     margin-bottom: auto;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.contacto-informacion a{
+    display: block;
+    color: var(--letra1);
+    margin: 16px 0;
+    text-decoration: none;
 }
 
 .contacto-informacion i{

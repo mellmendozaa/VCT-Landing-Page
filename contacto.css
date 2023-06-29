@@ -224,6 +224,13 @@ html, body{
     color: var(--primary);
 }
 
+.telefono a{
+    display: block;
+    color: var(--letra1);
+    margin: 16px 0;
+    text-decoration: none;
+}
+
 /* FOOTER */
 footer{
     background-color: var(--primary);
