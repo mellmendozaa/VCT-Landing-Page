@@ -31,7 +31,7 @@ html, body{
 /* INICIO */
 .inicio{
     font-family: var(--letraMarca);
-    min-height: 85vh;
+    min-height: 80vh;
     display: grid;
     grid-template-columns: 50% 50%;
 }
