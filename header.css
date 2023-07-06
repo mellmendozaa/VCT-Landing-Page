@@ -108,6 +108,7 @@ nav .titulo{
     width: 2rem;
     height: 2rem;
     padding: 0;
+    margin: 0  16px 0  0;
 }
 
 .menuHamburguesa span{
