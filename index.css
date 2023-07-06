@@ -471,7 +471,7 @@ footer p{
     }
     .inicio{
         display: flex;
-        background-image: url("imagen.jpg");
+        background-image: url("index2.jpg");
         background-size: cover;
         background-position: center;
     }
