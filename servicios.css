@@ -194,12 +194,12 @@ html, body{
 
 .seguros{
     display: grid;
-    grid-template-rows: 350px auto;
+    grid-template-rows: 318px auto; /*430px 350px*/
     /* grid-template-rows: min-content auto; */
     /* row-gap: 20px; */
 
     /* height: 600px; */
-    width: 500px;
+    width: 370px; /*500px*/
     
 
     border: 1px solid #e2e2e2;
@@ -290,17 +290,17 @@ html, body{
 }
 
 .foto-educacion{
-    background-image: url("seguro-educacion-min.jpg");
+    background-image: url("seguro-educacion.jpg");
     border-radius: 10px 10px 0px 0px;
 }
 
 .foto-autos{
-    background-image: url("seguro-auto-min.jpg");
+    background-image: url("seguro-auto.jpg");
     border-radius: 10px 10px 0px 0px;
 }
 
 .foto-hogar-mascotas{
-    background-image: url("seguro-hogar-mascotas-min.jpg");
+    background-image: url("seguro-hogar-mascotas.jpg");
     border-radius: 10px 10px 0px 0px;
 }
 
