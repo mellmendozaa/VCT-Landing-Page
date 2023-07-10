@@ -23,7 +23,8 @@ html, body{
 }
 
 .introduccion{
-    background-image: url("svg.svg");
+    /* background-image: url("svg.svg"); */
+    background-image: url("empleo.PNG");
     background-color: var(--primary);
     background-size: cover;
     background-repeat: no-repeat;
