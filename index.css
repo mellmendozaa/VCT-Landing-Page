@@ -141,6 +141,7 @@ header{
 .catalogo h2{
     color: var(--letra1);
     text-align: center;
+    text-transform: uppercase;
 }
 
 .productos{
@@ -178,11 +179,13 @@ header{
     font-size: 1rem;
     color: #666666;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .productos p{
     color: var(--letra1);
     margin: 0px 20px;
+    text-transform: uppercase;
 }
 
 .botonSeguroVerMas{

@@ -161,31 +161,6 @@ html, body{
     width: 100px;
 }
 
-/* Boton Agendar Cita */
-/* .botonAgendarCita{
-    color: white;
-    font-weight: bold;
-    background-color:var(--primary);
-    border: 2px solid white;
-    height: 40px;
-    border-radius: 5px;
-}
-
-.botonAgendarCita a:link{
-    color: white;
-    text-decoration: white;
-}
-
-.botonAgendarCita a:visited{
-    color: white;
-    text-decoration: white;
-}
-
-.botonAgendarCita{
-    width: 200px;
-    justify-content: center;
-} */
-
 /* Socios comerciantes de GNP */
 .gnp{
     font-family: var(--letraMarca);

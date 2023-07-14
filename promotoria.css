@@ -76,46 +76,7 @@ html, body{
     text-align: justify;
 }
 
-/* Boton Agendar Cita */
-.botonAgendarCita{
-    width: 100%;
-}
-.botonAgendarCita a{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 10px;
 
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-    background-color:var(--primary);
-    border: 2px solid var(--primary);
-    height: 40px;
-    border-radius: 50px;
-    margin: 0 auto;
-}
-
-.botonAgendarCita a:link{
-    color: white;
-    text-decoration: white;
-}
-
-.botonAgendarCita a:visited{
-    color: white;
-    text-decoration: white;
-}
-
-.botonAgendarCita a{
-    width: 200px;
-    justify-content: center;
-}
-
-.botonAgendarCita img{
-    width: 11px;
-
-    transform: rotate(40deg);
-}
 
 /* Socios comerciantes de GNP */
 .gnp{
@@ -218,9 +179,9 @@ html, body{
 
 /* METAS, VISION, MISION SECCION */
 .metas-vm{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 50% 50%;
-    grid-gap: 30px;
+    grid-gap: 30px; */
 
     margin:50px;
 
@@ -231,18 +192,18 @@ html, body{
 }
 
 /* METAS */
-.metas{
+/* .metas{
  grid-column: 1/2;
-}
+} */
 
-.metas p{
+/* .metas p{
     font-size: 30px;
 
-}
+} */
 
 /* MISION VISION */
 .vision-mision{
-    grid-column: 2/3;
+    /* grid-column: 2/3; */
 
     display: flex;
     flex-wrap: wrap;
@@ -253,7 +214,7 @@ html, body{
 }
 
 .vm-cuadro{
-    width: 40%;
+    width: 270px;
     padding: 0px 10px;
 
     /* border: 2px solid #e2e2e2;
@@ -264,6 +225,7 @@ html, body{
 .vm-cuadro h2{
     color: var(--letra1);
     text-align: center;
+    text-transform: uppercase;
     border-bottom: 1px solid var(--primary);
 }
 

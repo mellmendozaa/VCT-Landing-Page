@@ -87,56 +87,6 @@ html, body{
     text-align: justify;
 }
 
-
-.botonAgendarCita{
-    width: 100%;
-    /* margin: 10px 0; */
-}
-
-.botonAgendarCita a{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 10px;
-
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-    background-color:var(--primary);
-    border: 2px solid var(--primary);
-    height: 40px;
-    border-radius: 50px;
-    margin: 0 auto;
-}
-
-.botonAgendarCita a:link{
-    color: white;
-    text-decoration: white;
-}
-
-.botonAgendarCita a:visited{
-    color: white;
-    text-decoration: white;
-}
-
-.botonAgendarCita a{
-    width: 200px;
-    justify-content: center;
-}
-
-.botonAgendarCita img{
-    width: 11px;
-
-    transform: rotate(40deg);
-}
-
-/* INFORMACION */
-/* .informacionSeguros{
-     grid-column: 1/2; 
-
-    padding: 15px;
-}*/
-
 .informacionSeguros{
     margin: 20px 50px;
 }
@@ -235,6 +185,7 @@ html, body{
 
 .info-seguro h2{
     text-align: center;
+    text-transform: uppercase;
 }
 
 .info-seguro h3, .info-seguro li{
@@ -248,25 +199,6 @@ html, body{
 .info-seguro .botonAgendarCita{
     margin: 10px 0;
 }
-
- /* .titulo-seguro{
-     grid-column: 1/2;
-     grid-row: 1/2;
-
-     text-align: center;
-     color: var(--primary);
-    background-color: rgb(237, 237, 235);
-    padding: 0px 15px; 
-} 
-
- .descripcion-seguro{ 
-     grid-column: 1/2; 
-     grid-row: 2/3; 
-
-    color: var(--letra2);
-    background-color: rgb(237, 237, 235);
-    padding: 0px 15px;
-}  */
 
 .vinetaVCT{
     list-style-image: url(vinetaVCT.png);

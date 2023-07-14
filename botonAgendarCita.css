@@ -1,5 +1,6 @@
 .botonAgendarCita{
     width: 100%;
+    text-transform: uppercase;
 }
 
 .botonAgendarCita p{
