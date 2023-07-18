@@ -200,6 +200,10 @@ html, body{
     margin: 10px 0;
 }
 
+.botonAgendarCita p{
+    width: 120px;
+}
+
 .vinetaVCT{
     list-style-image: url(vinetaVCT.png);
 }
