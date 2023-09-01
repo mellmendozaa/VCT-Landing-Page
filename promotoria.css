@@ -139,6 +139,22 @@ html, body{
     text-align: justify;
 }
 
+.descripcion{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.descripcion-contenedor{
+    width: 40%;
+}
+
+.vinetaVCT{
+    list-style-image: url("vinetaVCT.png");
+    color: var(--letra2);
+}
+
+
 .bio-infoPersonal{
     grid-column: 3/4;
     grid-row: 2/3;
@@ -518,10 +534,22 @@ footer p{
     }
 }
 
+@media (max-width: 975px){
+    .descripcion{
+        gap: 0;
+    }
+
+    .descripcion-contenedor{
+        width: 90%;
+    }
+}
+
 @media (max-width: 950px){
     .bio-intro p{
         font-size: 1.5rem;
     }
+
+    
 
     .metas-vm{
         display: flex;
@@ -554,6 +582,7 @@ footer p{
         grid-row: 1/2;
     }
 
+   
     .bio-infoPersonal{
         grid-column: 1/3;
         grid-row: 2/3;
@@ -575,8 +604,6 @@ footer p{
     .bio-infoPersonal p{
         margin: 0;
     }
-
-    
 
 }
 
