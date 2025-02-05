@@ -209,11 +209,22 @@ html, body{
 /* FOOTER */
 footer{
     background-color: var(--primary);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 footer p{
     color: white;
     font-size: 18px;
+    margin: 0;
+    padding: 10px;
+    text-align: right;
+}
+
+footer a{
+    color: white;
+    font-size: 15px;
     margin: 0;
     padding: 10px;
     text-align: right;
