@@ -143,6 +143,7 @@ html, body{
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
+    
 }
 
 .descripcion-contenedor{
@@ -152,6 +153,7 @@ html, body{
 .vinetaVCT{
     list-style-image: url("vinetaVCT.png");
     color: var(--letra2);
+    margin: 6px 0;
 }
 
 
